@@ -1,0 +1,22 @@
+baseURL = 'https://Otaru049.github.io/'
+locale = 'zh-cn'
+title = 'Otaru049'
+theme = 'ananke'
+
+[params]
+custom_css = ["custom.css"]
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 1
+
+[[menu.main]]
+  name = "Notes"
+  url = "/notes/"
+  weight = 2
+
+[[menu.main]]
+  name = "About us"
+  url = "/about/"
+  weight = 3
