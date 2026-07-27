@@ -9,3 +9,33 @@ body {
         "PingFang SC",
         sans-serif;
 }
+/* 首页大标题字体 */
+header.cover h1 {
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color:rgba(255,255,255)
+}
+
+/* 首页副标题字体 */
+header.cover h2 {
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+/* 顶部菜单 */
+nav ul a {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color:rgba(255,255,255)
+}
+/* 顶部菜单最左边字体 */
+nav > div > a {
+    font-weight: 400 !important;
+    font-size: 1px !important;
+}
+
+.about-page .measure-wide {
+    max-width: 900px;
+    text-align: left;
+}

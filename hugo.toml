@@ -1,22 +1,27 @@
 baseURL = 'https://Otaru049.github.io/'
 locale = 'zh-cn'
-title = 'Otaru049'
+title = 'OTARU_049'
 theme = 'ananke'
 
 [params]
 custom_css = ["custom.css"]
 
 [[menu.main]]
-  name = "Posts"
-  url = "/posts/"
+  name = "Home"
+  url = "/"
   weight = 1
 
 [[menu.main]]
-  name = "Notes"
-  url = "/notes/"
+  name = "Posts"
+  url = "/posts/"
   weight = 2
 
 [[menu.main]]
-  name = "About us"
-  url = "/about/"
+  name = "Tutorials"
+  url = "/tutorials/"
   weight = 3
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
