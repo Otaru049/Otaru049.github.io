@@ -1,0 +1,53 @@
+<footer class="{{ .Site.Params.background_color_class | compare.Default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+
+    <div class="footer-container">
+  
+      <div class="footer-links">
+  
+        <a href="/about/">
+          About
+        </a>
+  
+        <a href="https://github.com/Otaru049">
+          Github
+        </a>
+  
+        <a href="/posts/">
+          Post
+        </a>
+  
+        <a href="/tutorials">
+          Tutorial
+        </a>
+  
+      </div>
+  
+  
+      <div class="footer-right">
+  
+        <div class="footer-social">
+          {{ partials.IncludeCached "social/follow.html" . }}
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  
+    <div class="footer-bottom">
+  
+      <a class="footer-copy"
+         href="{{ .Site.Home.Permalink }}">
+  
+        &copy;
+        {{ with .Site.Copyright | compare.Default .Site.Title }}
+          {{ . | safe.HTML }}
+          {{ now.Format "2006" }}
+        {{ end }}
+  
+      </a>
+  
+    </div>
+  
+  
+  </footer>

@@ -13,13 +13,14 @@ body {
 header.cover h1 {
     font-weight: 300;
     letter-spacing: 0.02em;
-    color:rgba(255,255,255)
+    color:rgba(255,255,255,1)
 }
 
 /* 首页副标题字体 */
 header.cover h2 {
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.02em;
+    color:rgba(255,255,255,1)
 }
 
 /* 顶部右侧菜单字体 */
@@ -27,7 +28,7 @@ nav ul a {
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 0.01em;
-    color:rgba(255,255,255)
+    color:rgba(255,255,255,1)
 }
 
 /* 顶部菜单最左边字体
@@ -61,4 +62,99 @@ footer[role="contentinfo"] {
   #18231E 100%  
   ) !important;
 }
- 
+
+/* ===== 自定义footer布局 ===== */
+
+footer[role="contentinfo"] {
+    padding:60px 50px !important;
+}
+
+/* ===== footer navigation ===== */
+
+.footer-container {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-bottom:10px;
+
+}
+
+
+.footer-links {
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+
+.footer-links a {
+
+    color:rgba(255,255,255,0.9) !important;
+
+    text-decoration:none;
+
+    font-size:29px;
+
+    font-weight:500;
+
+    letter-spacing:0.01em;
+
+    transition:0.3s;
+
+}
+
+
+.footer-links a:hover {
+
+    color:white !important;
+
+}
+
+
+/* social区域 */
+
+.footer-right {
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+/* copyright */
+
+.footer-bottom {
+    
+    max-width: 1200px;
+
+    margin:40px auto 0;
+
+    text-align:left;
+
+}
+
+
+.footer-copy {
+
+    color:rgba(255,255,255,0.9) !important;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    font-weight: 500;
+
+    letter-spacing:0.01em;
+    
+}
