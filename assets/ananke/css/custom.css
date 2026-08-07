@@ -19,15 +19,16 @@ header.cover h1 {
 /* 首页副标题字体 */
 header.cover h2 {
     font-weight: 500;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.08em;
+    word-spacing: -0.03em;
     color:rgba(255,255,255,1)
 }
 
 /* 顶部右侧菜单字体 */
 nav ul a {
     font-size: 30px;
-    font-weight: 500;
-    letter-spacing: 0.01em;
+    font-weight: 400;
+    letter-spacing: -0.03em;
     color:rgba(255,255,255,1)
 }
 
@@ -38,12 +39,9 @@ nav > div > a {
     font-size: 1px !important;
 }
 
-.about-page .measure-wide {
-    max-width: 900px;
-    text-align: left;
-}
+ 
 
-/*网页底部版权条图案（footer）
+/*全局footer背景颜色
 复刻首页大图，肝死我了我草 */
 footer[role="contentinfo"] {
     background:
@@ -64,12 +62,13 @@ footer[role="contentinfo"] {
 }
 
 /* ===== 自定义footer布局 ===== */
-
+ 
+/*footer整体大小*/
 footer[role="contentinfo"] {
-    padding:60px 50px !important;
+    padding:40px 50px !important;
 }
 
-/* ===== footer navigation ===== */
+/* ===== footer布局容器 ===== */
 
 .footer-container {
 
@@ -79,7 +78,7 @@ footer[role="contentinfo"] {
 
     display:flex;
 
-    justify-content:space-between;
+    justify-content:flex-start;
 
     align-items:center;
 
@@ -87,12 +86,12 @@ footer[role="contentinfo"] {
 
 }
 
-
+/*footer链接*/
 .footer-links {
 
     display:flex;
-
-    gap:35px;
+    gap:40px;
+    transform:translate(10px, 10px);
 
 }
 
@@ -105,15 +104,17 @@ footer[role="contentinfo"] {
 
     font-size:29px;
 
-    font-weight:500;
+    font-weight:300;
 
     letter-spacing:0.01em;
 
     transition:0.3s;
 
+    white-space: nowrap;
+
 }
 
-
+/*鼠标放上去的效果*/
 .footer-links a:hover {
 
     color:white !important;
@@ -121,7 +122,7 @@ footer[role="contentinfo"] {
 }
 
 
-/* social区域 */
+/* social社交图标区域 */
 
 .footer-right {
 
@@ -132,29 +133,117 @@ footer[role="contentinfo"] {
 }
 
 
-/* copyright */
+
 
 .footer-bottom {
-    
-    max-width: 1200px;
 
-    margin:40px auto 0;
+    width:100%;
 
-    text-align:left;
+    margin-top:50px;
+
+    text-align:right;
+
+    position:relative;
+
+    right:-25px;
+    bottom:-37px;
 
 }
-
-
+/* copyright */
 .footer-copy {
 
-    color:rgba(255,255,255,0.9) !important;
+    color:rgba(255,255,255,0.3) !important;
 
     text-decoration:none;
 
-    font-size:22px;
+    font-size:15px;
 
-    font-weight: 500;
+    font-weight: 600;
 
     letter-spacing:0.01em;
     
+}
+
+/* =====================
+   手机端 footer 适配
+   ===================== */
+
+   @media screen and (max-width: 768px) {
+
+    footer[role="contentinfo"] {
+
+        padding-top: 40px !important;
+        padding-left:20px !important;
+        padding-bottom:40px !important;
+
+    }
+
+
+    .footer-container {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+
+    .footer-links {
+
+        display:grid;
+
+        grid-template-columns:repeat(2,auto);
+
+        width:auto;
+
+        gap: 30px 38px;
+
+        transform: translateY(20px);
+
+    }
+
+
+    .footer-links a {
+
+        font-size: 20px;
+
+    }
+
+
+    .footer-right {
+
+        width:100%;
+
+    }
+
+
+    .footer-bottom {
+        width:100%;
+
+        margin-top:15px;
+
+        text-align:left;
+
+        right:0;
+
+    }
+
+
+    .footer-copy {
+
+        font-size:15px;
+
+    }
+
+}
+.github-icon {
+
+    width:20px;
+    height:20px;
+
+    margin-left:8px;
+
+    vertical-align:1px;
 }
